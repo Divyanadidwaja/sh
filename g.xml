@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+<groups>
+<run>
+<exclude name="smokeSuit"></exclude>
+</run></groups>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="com.TestNG.groupexecution2_Test"/>
+      <class name="com.TestNG.groupexecution1_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
